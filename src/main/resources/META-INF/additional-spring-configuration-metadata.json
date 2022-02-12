@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "spring.flyway.spring.main.allow-circular-references",
+      "type": "java.lang.String",
+      "description": "Description for spring.flyway.spring.main.allow-circular-references."
+    },
+    {
+      "name": "spring.main",
+      "type": "java.lang.String",
+      "description": "Description for spring.main."
+    },
+    {
+      "name": "spring.enabled",
+      "type": "java.lang.String",
+      "description": "Description for spring.enabled."
+    }
+  ] }
