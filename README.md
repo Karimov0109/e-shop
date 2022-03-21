@@ -1,4 +1,4 @@
-# e-shop
+# e-shop (Еще не закончен)
 TECHNOLOGIES:
 Java 11
 Spring framework (Sping boot, Spring MVC, JPA/Hibernate, (Spring Security - not released still))
