@@ -34,7 +34,7 @@ public class MainController {
         return "login";
     }
 
-    @RequestMapping("/login-error") //чтобы пользователь попал НА 404-page
+    @RequestMapping("/login-error") //фойдаланувчи 404 страницага тушиши учун
     public String loginError(Model model){
         model.addAttribute("loginError", true);
         return "login";

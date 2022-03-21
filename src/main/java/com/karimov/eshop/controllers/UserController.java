@@ -3,7 +3,6 @@ package com.karimov.eshop.controllers;
 import com.karimov.eshop.domain.User;
 import com.karimov.eshop.dto.UserDTO;
 import com.karimov.eshop.service.UserService;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -71,7 +70,6 @@ public class UserController {
             && !userDTO.getPassword().isEmpty()
             && !Objects.equals(userDTO.getPassword(), userDTO.getMatchingPassword())){
             model.addAttribute("user", userDTO);
-            // нужно добавить какой то сообщения, будем в другой раз
             return "profile";
         }
         userService.updateProfile(userDTO);
