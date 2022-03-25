@@ -14,4 +14,5 @@ spring:
   datasource.driver-class-name: org.postgresql.Driver
   jpa.open-in-view: false
   jpa.properties.hibernate.jdbc.lob.non_contextual_creation: true
-
+server:
+  port: 8085

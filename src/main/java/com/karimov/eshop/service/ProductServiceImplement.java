@@ -4,7 +4,7 @@ import com.karimov.eshop.dao.ProductRepository;
 import com.karimov.eshop.domain.Bucket;
 import com.karimov.eshop.domain.User;
 import com.karimov.eshop.dto.ProductDTO;
-import com.karimov.eshop.mapper.ProductMapper;
+import com.karimov.eshop.dto.mapper.ProductMapper;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
