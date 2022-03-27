@@ -1,27 +1,20 @@
-version: '2'
+version: '3.1'
 
 services:
   app:
     image: 'eshop-docker:latest'
-    build:
-      context: src/main
+    build: ./
     container_name: app
     depends_on:
-      - db
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://127.0.0.1:5432/shop
-      - SPRING_DATASOURCE_USERNAME= root
-      - SPRING_DATASOURCE_PASSWORD= alp2226177
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - my-postgres
     ports:
-      - "8085:8085"
-  db:
+      - "8080:8080"
+  my-postgres:
     image: 'postgres:latest'
-    volumes:
-      - ./postgresql/:/var/lib/postgresql/data/
-    container_name: db
+    container_name: my-postgres
     environment:
-      - POSTGRES_USER= root
-      - POSTGRES_PASSWORD= alp2226177
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1
+      - POSTGRES_DB=shop
     ports:
       - "5432:5432"

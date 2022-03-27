@@ -4,9 +4,9 @@ spring:
       ddl-auto: update
     show-sql: false
   datasource:
-    url: jdbc:postgresql://localhost:5432/shop
-    username: root
-    password: alp2226177
+    url: jdbc:postgresql://my-postgres:5432/shop
+    username: postgres
+    password: 1
   flyway:
     baseline-on-migrate: true
   main:
@@ -15,4 +15,4 @@ spring:
   jpa.open-in-view: false
   jpa.properties.hibernate.jdbc.lob.non_contextual_creation: true
 server:
-  port: 8085
+  port: 8080
